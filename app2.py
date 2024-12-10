@@ -91,9 +91,12 @@ años = df_agrupado['AÑO'].unique()
 for i, año in enumerate(años):
     df_year = df_agrupado[df_agrupado['AÑO'] == año]
 
+    # Ordenar de menor a mayor participación
+    df_year = df_year.sort_values(by='PARTICIPACION')
+
     # Definir colores
     colors = [
-        'rgb(84,93,89)' if universidad == "UNIVERSIDAD DE LAS AMERICAS" else 'rgb(0,102,0)'
+        'rgb(0,102,0)' if universidad == "UNIVERSIDAD DE LAS AMERICAS" else 'rgb(84,93,89)'
         for universidad in df_year['UNIVERSIDAD']
     ]
 
