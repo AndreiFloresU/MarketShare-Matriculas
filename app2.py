@@ -96,7 +96,7 @@ for i, año in enumerate(años):
 
     # Definir colores
     colors = [
-        'rgb(0,102,0)' if universidad == "UNIVERSIDAD DE LAS AMERICAS" else 'rgb(84,93,89)'
+        'rgb(0,102,0)' if universidad == "UNIVERSIDAD DE LAS AMERICAS" else 'rgb(227,232,228)'
         for universidad in df_year['UNIVERSIDAD']
     ]
 
